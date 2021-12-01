@@ -1,0 +1,31 @@
+{
+    "manifest_version" : 2,
+    "name" : "Canvas Calendar",
+    "version" : "1.0",
+
+    "description" : "Sync Canvas assignments to Google calendar",
+
+    "icons": {
+        "48": "icons/icon.jpeg"
+    },
+
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "identity"
+    ],
+
+    "background": {
+        "scripts": [
+          "background/authorize.js",
+          "background/calendarinfo.js",
+          "background/main.js"
+        ]
+    },
+
+    "browser_action":{
+        "default_icon" : {"48":"icons/icon.jpeg"},
+        "default_title" : "Sync your assignments to Google Calendar",
+        "default_popup" : "popup/sync.html"
+    }
+}

@@ -1,0 +1,23 @@
+html, body {
+    width: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+.Button{
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.Sync:hover{
+    background-color: #CFF2F2;
+}
+
+.Sync{
+    background-color: #E5F2F2;
+}
